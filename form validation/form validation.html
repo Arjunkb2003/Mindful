@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="fv">
+        <p>Login to your account</p>
+        <div class="one">
+        <p class="txt">Username</p>
+        <input type="text" class="un"  id ="username" placeholder="Enter the username">
+    </div>
+    <div class="two">
+        <p class="txt">Password</p>
+        <input type="password" class="pw" id ="password" placeholder="Enter Password">
+    </div>
+        <button onclick="get()">Login</button>
+        <div id = "resultData"></div> </div>
+    </main>
+
+<script>   
+            var res=document.getElementById("resultData")
+            function get(){
+                var user=document.getElementById("username").value
+                var passs =document.getElementById("password").value
+                if (user.length==0 && passs.length==0) {
+                    res.innerHTML="Enter username and password";
+                    res.style.color="red"
+                    res.style.fontWeight="800"
+                }
+                else if(user.length==0){
+                    res.innerHTML="Enter username"
+                    res.style.color="red"
+                    res.style.fontWeight="800"
+                }
+                else if(passs.length==0){
+                    res.innerHTML="Enter Password"
+                    res.style.color="red"
+                    res.style.fontWeight="800"
+                }
+                else if(user.length<4){
+                    res.innerHTML= "Username must be 4 characters or above ";
+                    res.style.color="red"
+                    res.style.fontWeight="800"
+                }
+                else if (passs.length<6 || passs.length>12) {
+                    res.innerHTML= "password should have 6 to 12 characters";
+                    res.style.color="red"
+                    res.style.fontWeight="800"
+                
+                }
+                else{
+                res.innerHTML= "Form submitted";
+                res.style.color="green"
+                res.style.fontWeight="800"}
+            }
+</script>
+</body>
+</html>

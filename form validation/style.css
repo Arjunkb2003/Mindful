@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin: 40px;
+    background-color: rgb(179, 153, 153);
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.fv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+input , button{
+    padding: 8px;
+    margin-left: 4.5rem;
+    margin-right: 3.5rem;
+    border-radius: 8px;
+}
+
+button{
+    color: white;
+    background-color: #03cb27;
+    height: 35px;
+    width: 90px;
+}
+.fv p{
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.txt{
+    margin-left: 80px;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+}
+.one,.two{
+    margin-top: -15px;
+}
