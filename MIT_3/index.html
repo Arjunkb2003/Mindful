@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">  
+  <title>MIT 3 | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class=" main">
+<div class="a">
+  <h1>Learn to code by <br> watching others</h1>
+  <p>See how experienced developers solve problems in real time . <br> Watching scripted tutorials is great , but understanding how <br> developers think is invaluable</p>
+</div>
+
+<div>
+  <div class="pay">
+    <p>Try it free 7 days then $20/m thereafter</p>
+  </div>
+
+  <div class="container">
+    <div class="jlep">
+      <input type="text" id="firstname" placeholder="First name">
+    </div>
+    <div class="jlep"><input type="text" id="lastname" placeholder="Last name"></div>
+    <div class="jlep">
+      <input type="email" id="email" placeholder="Email address">
+    </div>
+    <div class="jlep">
+      <input type="password" id="password" placeholder="Password">
+    </div>
+    <div class="cyft" >
+      <button onclick="validate()">Claim your free trial</button>
+    </div>
+    <div id = "resultData"></div> 
+    <div class="tas">
+      By clicking the button you are agreeing to our <span> terms and services </span>
+    </div>
+  </div>
+</div></div>
+
+<script>
+
+  var res=document.getElementById("resultData")
+
+    function validate(){
+      var firstname = document.getElementById("firstname").value
+      var password = document.getElementById("password").value
+      if (firstname == password){
+        res.innerHTML="username and password should not be same "
+        res.style.color="red"
+      }
+      else if(firstname.length<4){
+        res.innerHTML="username should contain atleast 4 characters "
+        res.style.color="red"
+        res.style.textAlign="center"
+        res.style.fontSize="13px"
+      }
+      else if ( password.length<6 || password.length>16){
+        res.innerHTML="Password should contain minimum 6 and maximum 16 characters "
+        res.style.color="red"
+        res.style.textAlign="center"
+        res.style.fontSize="13px"
+      }
+    }
+</script>
+</body>
+</html>

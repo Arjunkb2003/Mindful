@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+    background-size: cover;
+    font-family: poppins;
+}
+.a{
+    color: white;
+
+
+}
+.a h1{
+    font-size: 40px;
+    line-height: 3rem;
+    padding-bottom: 25px;
+}
+.a p{
+    font-weight: 500;
+    font-size: 14px;
+}
+.pay {
+    background-color:  hsl(248, 32%, 49%);
+    padding: 10px 15px;
+    width: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    border-bottom: 5px solid rgb(68, 59, 59);
+    margin-bottom: 20px;
+}
+.container{
+    background-color: white;
+    width: 29.5rem;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.jlep{
+    padding: 10px 20px;
+    border: 1px solid rgb(136, 131, 131);
+    margin: 20px 25px;
+    border-radius: 5px;
+}
+
+.cyft{
+    padding: 10px 20px;
+    background-color: hsl(154, 59%, 51%);
+    margin: 20px 25px;
+    border-radius: 5px;
+    color: white;
+    border-bottom: 3px solid rgb(52, 118, 52);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tas
+{
+    font-size: 10px;
+    padding-left: 55px;
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+    font-weight: 500;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 6rem;
+}
