@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="target" id="target">
+
+    </div>
+    <div class="coun"><p>Count = <span id="count">0</span></p></div>
+    <div>
+        <input type="button" id="click" onclick="increaseCount()" value="Increase Count">
+        <input type="button" id="reset" onclick="resetCount()" value="Reset ">
+        <input type="button" id="red" onclick="changeColor('red')" value="Red">
+        <input type="button" id="blue" onclick="changeColor('blue')" value="Blue">
+    </div>
+    <div>
+        <input type="button" id="toggle" onclick="toggleTheme()" value="Toggle Theme">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
