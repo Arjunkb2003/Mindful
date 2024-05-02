@@ -1,0 +1,7 @@
+var str ="madam"
+
+function isp(str) {
+    return str === str.split('').reverse().join('');
+}
+
+console.log(isp(str))
