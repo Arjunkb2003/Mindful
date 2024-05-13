@@ -25,6 +25,18 @@ function addTask() {
         taskText.classList.add('tasktext');
         taskText.textContent = taskInput;
 
+        var checkbox = document.createElement('input');
+        checkbox.classList.add('inputs')
+        checkbox.type = 'checkbox';
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                taskText.style.textDecoration = 'line-through';
+            } else {
+                taskText.style.textDecoration = 'none';
+            }
+            saveTasksToLocalStorage();
+        });
+
         var categoryText = document.createElement('div');
         categoryText.classList.add('categorytext');
         categoryText.textContent = categorySelect;
@@ -37,6 +49,7 @@ function addTask() {
         deleteicon.classList.add('deleteicon');
         deleteicon.innerHTML = '&#10006;';
 
+        container.appendChild(checkbox);
         container.appendChild(taskText);
         container.appendChild(categoryText);
         container.appendChild(edit);
@@ -127,6 +140,19 @@ function loadTasksFromLocalStorage() {
             taskText.classList.add('tasktext');
             taskText.textContent = task.taskText;
 
+            var checkbox = document.createElement('input');
+            checkbox.classList.add('inputs')
+            checkbox.type = 'checkbox';
+            checkbox.checked = task.completed;
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    taskText.style.textDecoration = 'line-through';
+                } else {
+                    taskText.style.textDecoration = 'none';
+                }
+                saveTasksToLocalStorage();
+            });
+
             var categoryText = document.createElement('div');
             categoryText.classList.add('categorytext');
             categoryText.textContent = task.categoryText;
@@ -139,6 +165,7 @@ function loadTasksFromLocalStorage() {
             deleteicon.classList.add('deleteicon');
             deleteicon.innerHTML = '&#10006;';
 
+            container.appendChild(checkbox);
             container.appendChild(taskText);
             container.appendChild(categoryText);
             container.appendChild(edit);
@@ -192,19 +219,6 @@ function loadTasksFromLocalStorage() {
             document.getElementById("taskList").appendChild(container);
         });
     }
-}
-
-// Filter tasks based on category
-function filterTasks(category) {
-    var taskContainers = document.querySelectorAll('.container');
-    taskContainers.forEach(container => {
-        var categoryText = container.querySelector('.categorytext').textContent;
-        if (category === "all" || category === categoryText.toLowerCase()) {
-            container.style.display = "block";
-        } else {
-            container.style.display = "none";
-        }
-    });
 }
 
 // Call the function to load tasks when the page loads
