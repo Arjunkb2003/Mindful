@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: poppins;
+    background-color: #dddddd;
+}
+.mrs{
+    text-align: center;
+    margin-top: 17px;
+}
+.genre{
+    display: flex;
+    margin-top: 4rem;
+}
+.genre p{
+    margin-left: 4rem;
+}
+.select{
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.card{
+    background-color: #fff;
+    margin: 0 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1.45rem;
+    border-radius: 10px;
+    padding: 15px 0;
+    padding-left: 3rem;
+    display: block; 
+}
+.card h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(42, 41, 41);
+}
