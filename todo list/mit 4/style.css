@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins;
+}
+header{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 8px 0;
+    text-align: center;
+}
+.ac{
+    font-size: 26px;
+    padding: 20px;
+    margin-left: 100px;
+}
+.pla{
+    margin-left: 120px;
+}
+.nea{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.name,.email{
+    height: 30px;
+    width: 1300px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+button{
+    background-color: #2540c7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+hr{
+    margin: 0 100px;
+}
+.details{
+    margin-left: 120px;
+    border: 1px solid rgb(165, 164, 164);
+    margin-top: 15px;
+    margin-right: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.names,.emails{
+    font-size: 14px;
+    padding-left: 20px;
+}
+.dlt-btn{
+    background-color: #e2e2e2;
+    color: red;
+    margin-top: 19px;
+    margin-right: 10px;
+}
+.emails{
+ margin-left: 20px;
+}
